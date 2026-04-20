@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabed Navigation</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome CDN (no login needed) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Tabed Navigation</h1>
+  <button id="toggleBtn">🌙</button>
+</header>
+
+<div class="container">
+  <div class="tabs">
+    <button class="tab active" data-tab="home">
+      <i class="fas fa-home"></i> Home
+    </button>
+    <button class="tab" data-tab="about">
+      <i class="fas fa-user"></i> About
+    </button>
+    <button class="tab" data-tab="projects">
+      <i class="fas fa-code"></i> Projects
+    </button>
+    <button class="tab" data-tab="skills">
+      <i class="fas fa-chart-bar"></i> Skills
+    </button>
+  </div>
+
+  <div class="content">
+
+    <!-- HOME -->
+    <div id="home" class="tab-content active">
+      <h2>Hi, I'm a Web Developer 👋</h2>
+      <p>I build modern, responsive web interfaces using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about" class="tab-content">
+      <h2>About Me</h2>
+      <p>
+        Passionate about frontend development. I enjoy creating clean UI,
+        smooth animations, and user-friendly experiences.
+      </p>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects" class="tab-content">
+      <h2>Projects</h2>
+      <div class="project-card">💻 Portfolio Website</div>
+      <div class="project-card">📱 Responsive Landing Page</div>
+      <div class="project-card">🧮 JavaScript Calculator</div>
+    </div>
+
+    <!-- SKILLS -->
+    <div id="skills" class="tab-content">
+      <h2>My Skills</h2>
+
+      <div class="skill">
+        <p>HTML</p>
+        <div class="progress">
+          <div class="progress-bar" data-progress="90"><span>90%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p>CSS</p>
+        <div class="progress">
+          <div class="progress-bar" data-progress="85"><span>85%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress">
+          <div class="progress-bar" data-progress="75"><span>75%</span></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p>React</p>
+        <div class="progress">
+          <div class="progress-bar" data-progress="65"><span>65%</span></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
